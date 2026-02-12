@@ -1,0 +1,72 @@
+#logo_light_mode {
+    display: var(--md-header-logo-light-mode);
+}
+
+#logo_dark_mode {
+    display: var(--md-header-logo-dark-mode);
+}
+
+[data-md-color-scheme=default] {
+    /* --md-bg-color: rgb(255, 0, 0);
+    --md-primary-fg-color: rgb(255, 0, 0);
+    --md-accent-fg-color: rgb(255, 0, 0);
+    --md-accent-bg-color: rgb(255, 0, 0);
+    --md-accent--color: rgb(255, 0, 0);
+ */
+    --md-header-logo-dark-mode:  none;
+    --md-header-logo-light-mode: block;
+}
+
+[data-md-color-scheme=slate] {
+    /* --md-bg-color: rgb(255, 0, 0);
+    --md-primary-fg-color: rgb(255, 0, 0);
+    --md-accent-fg-color: rgb(255, 0, 0);
+    --md-accent-bg-color: rgb(255, 0, 0);
+    --md-accent--color: rgb(255, 0, 0);
+ */
+
+    --md-header-logo-dark-mode:  block;
+    --md-header-logo-light-mode: none;    
+}
+.textbox {
+    background: transperent;
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+/* Banner background gradients */
+[data-md-color-scheme=default] .md-banner {
+    /* background: linear-gradient(90deg, rgb(215, 235, 211) 36%, rgb(147, 184, 243) 95%); */
+    background-image: url("../assets/layered-waves-haikei (3).svg");
+
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+[data-md-color-scheme=slate] .md-banner {
+    background: linear-gradient(90deg,#e09a54,#f9ecac);
+    /* background-image: url("../assets/dark-banner.svg"); */
+}
+
+/* Buttons background gradient */
+[data-md-color-scheme=default] .md-button--primary {
+  background: linear-gradient(90deg, rgb(161, 215, 149) 36%, rgb(147, 184, 243) 95%);
+}
+
+[data-md-color-scheme=slate] .md-button--primary {
+  background: linear-gradient(90deg,rgb(224, 154, 84),rgb(249, 236, 172));
+}
+
+/* Nav items style */
+[data-md-color-scheme=default] .md-nav--primary .md-nav__item .md-nav__link--active {
+    background: linear-gradient(35deg,rgba(255, 138, 140, 0.42),rgba(255, 192, 32, 0.4));
+}
+
+[data-md-color-scheme=slate] .md-nav--primary .md-nav__item .md-nav__link--active {
+    background: var(--main-color);
+}
+

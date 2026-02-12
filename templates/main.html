@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+<div class="md-banner md-banner--primary" role="banner", id = "banner">
+    {% block announce %}
+    {% endblock %}
+</div>
+
+{% block container %}
+    <!-- Add scripts that need to run before here -->
+    {{ super() }}
+    <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
+
+
+<div class="pointer" aria-hidden="true"></div>
