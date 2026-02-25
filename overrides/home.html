@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+<div class="md-banner md-banner--primary" role="banner", id = "banner">
+    <p>Test</p>
+</div>
+
+
+{% block container %}
+
+    <!-- Add scripts that need to run before here -->
+    {{ super() }}
+    <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
+
+{% block hero %}
+
+  <section class="custom-hero">
+    
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <p class="hero-title">
+          Zensical template
+        </p>
+        <img src="./assets/color-block-fillers-1.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-2.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-3.svg" class="hero-svg" alt="Zensical Logo">    <br>
+
+        <p class="hero-subtitle">
+          A Zensical configuration project to simplify & enhance developer experience.
+        </p>
+        <img src="./assets/color-block-fillers-1.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-2.svg" class="hero-svg" alt="Zensical Logo">    <br>
+
+      </div>
+
+      <div class="hero-logo">
+        <img src="./assets/logo/logo-compact-dark.svg#only-dark" class="hero-logo" alt="Zensical Logo">
+        <img src="./assets/logo/logo-compact-light.svg#only-light" class="hero-logo" alt="Zensical Logo">
+      </div>
+
+    </div>
+  </section>
+
+
+    <div class="hero-svg-container">
+        <img src="./assets/color-block-fillers-1.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-2.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-3.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-4.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <img src="./assets/color-block-fillers-5.svg" class="hero-svg" alt="Zensical Logo">    <br>
+        <!-- <img src="./assets/hubble-pic-blur.jpg" class="hubble" alt="Zensical Logo">    <br> -->
+    </div>
+
+    {{ super() }}
+
+{% endblock %}

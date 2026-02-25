@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+<div class="md-banner md-banner--primary" role="banner", id = "banner">
+</div>
+
+{% block container %}
+    <!-- Add scripts that need to run before here -->
+    {{ super() }}
+    <!-- Add scripts that need to run afterwards here -->
+{% endblock %}
+
+{% block hero %}
+
+  <section class="custom-hero">
+    
+    <div class="hero-container">
+
+      <div class="hero-text">
+        <p class="hero-title">
+          Zensical
+        </p>
+        <p class="hero-subtitle">
+          A Zensical configuration project to simplify & enhance developer experience.
+        </p>
+      </div>
+
+      <div class="hero-logo">
+        <img src="./assets/logo/logo-compact-dark.svg#only-dark" alt="Zensical Logo">
+        <img src="./assets/logo/logo-compact-light.svg#only-light" alt="Zensical Logo">
+      </div>
+
+    </div>
+  </section>
+  {{ super() }}
+
+{% endblock %}
